@@ -34,9 +34,7 @@
     "sdkVersion": "3",
     "shortName": "P.js W-Lisse",
     "targetPlatforms": [
-        "aplite",
-        "basalt",
-        "chalk"
+        "aplite"
     ],
     "uuid": "3d917a46-e042-44a5-9811-786e43bf2eb7",
     "versionCode": 1,
