@@ -66,7 +66,7 @@ ajax(
     // Construct Menu to show to user
     var resultsMenu = new UI.Menu({
       sections: [{
-        title: 'Current Forecast',
+        title: 'Forecast - ' + cityName,
         items: menuItems
       }]
     });
@@ -81,12 +81,14 @@ ajax(
   
       // Capitalize first letter
       content = content.charAt(0).toUpperCase() + content.substring(1);
+      
+      var temperatureInCelcius = forecast.main.temp - 273.15;
+      var windSpeedInKmh =  forecast.wind.speed * 1.6;
   
       // Add temperature, pressure etc
-      content += '\nTemperature: ' + Math.round(forecast.main.temp - 273.15) + '°C' + 
+      content += '\nTemperature: ' + Math.round(temperatureInCelcius) + '°C' + 
         '\nPressure: ' + Math.round(forecast.main.pressure) + ' mbar' +
-        '\nWind: ' + Math.round(forecast.wind.speed) + ' mph, ' + 
-        Math.round(forecast.wind.deg) + '°';
+        '\nWind: ' + Math.round(windSpeedInKmh) + ' km/h, ' + Math.round(forecast.wind.deg) + '°';
   
       // Create the Card for detailed view
       var detailCard = new UI.Card({
