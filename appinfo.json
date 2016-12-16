@@ -4,13 +4,12 @@
         ""
     ],
     "companyName": "VibeSoft",
-    "longName": "Pebble.js Weather Lisse",
+    "longName": "Weather Forecast Lisse",
     "projectType": "pebblejs",
     "resources": {
         "media": [
             {
                 "file": "images/menu_icon.png",
-                "menuIcon": true,
                 "name": "IMAGE_MENU_ICON",
                 "type": "bitmap"
             },
@@ -28,15 +27,21 @@
                 "file": "fonts/UbuntuMono-Regular.ttf",
                 "name": "MONO_FONT_14",
                 "type": "font"
+            },
+            {
+                "file": "images/Untitled.png",
+                "menuIcon": true,
+                "name": "IMAGES_UNTITLED_PNG",
+                "type": "bitmap"
             }
         ]
     },
     "sdkVersion": "3",
-    "shortName": "P.js W-Lisse",
+    "shortName": "W.F.-Lisse",
     "targetPlatforms": [
         "aplite"
     ],
-    "uuid": "3d917a46-e042-44a5-9811-786e43bf2eb7",
+    "uuid": "623e0ffa-2238-495f-94b7-e7a325f9efc6",
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
